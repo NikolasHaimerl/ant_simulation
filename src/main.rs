@@ -38,7 +38,6 @@ fn main() {
             break;
         }
         if ants.is_empty() {
-            println!("All ants have been destroyed. Stopping simulation.");
             break;
         }
 
