@@ -37,6 +37,10 @@ fn main() {
         if world.colonies.is_empty() {
             break;
         }
+        if ants.is_empty() {
+            println!("All ants have been destroyed. Stopping simulation.");
+            break;
+        }
 
         let round_start = Instant::now();
         run_simulation_step(&mut world, &mut ants);
